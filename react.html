@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Check</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Speed Check by  Naresh Chityala</h1>
+    <div id="target">Your time: 0 ms</div>
+    <div id="counter">Count: 0 ms</div>
+    <button id="startTimer">Start Timer</button>
+    <button id="react">React</button>
+
+    <script>
+      let reactTime = undefined;
+
+      function recordTime() {
+        reactTime = Date.now();
+        console.log(reactTime);
+      }
+
+      const reactButton = document.getElementById("react");
+      reactButton.onclick = recordTime;
+
+      function startTime() {
+        const countdownStart = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
+
+        for (let i = 0; i < countdownStart; i++) {
+          setTimeout(function () {
+            document.getElementById("counter").innerHTML = `Count: ${i}`;
+          }, (countdownStart - 1 - i) * 1000);
+        }
+
+        setTimeout(function () {
+          if (reactTime === undefined) {
+            document.getElementById("target").innerHTML = "Too Slow";
+          } else {
+            const endTime = Date.now();
+            const elapsed = endTime - reactTime;
+            document.getElementById(
+              "target"
+            ).innerHTML = `Time was ${elapsed} ms`;
+          }
+        }, countdownStart * 1000);
+      }
+      const startTimerButton = document.getElementById("startTimer");
+      startTimerButton.onclick = startTime;
+    </script>
+  </body>
+</html>
