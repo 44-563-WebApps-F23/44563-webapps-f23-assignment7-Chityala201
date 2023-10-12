@@ -3,8 +3,9 @@
 An assignment on java script modifying the DOM and using anonymous callback functions.
 
 
-Hosted at:- [https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/pirate.html]
 
-Hosted at:- [https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/react.html]
+Hosted at: [https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/pirate.html](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/pirate.html)
 
-Hosted at:- [https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/merger.html]
+Hosted at: [https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/react.html](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/react.html)
+
+Hosted at: [https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/merger.html](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-Chityala201/merger.html)
